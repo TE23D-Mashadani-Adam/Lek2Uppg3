@@ -57,24 +57,30 @@ public class App {
                 }
             }
 
+            String operation = "";
+
             switch (val) {
                 case "1":
                     sum = tal1 + tal2;
+                    operation = "+";
                     break;
                 case "2":
                     sum = tal1 - tal2;
+                    operation = "-";
                     break;
                 case "3":
                     sum = tal1 * tal2;
+                    operation = "*";
                     break;
                 case "4":
                     sum = tal1 / tal2;
+                    operation = "/";
                     break;
                 default:
                     break;
             }
 
-            System.out.println("svar:" + sum);
+            System.out.println((int)tal1 + " " + operation +  " " + (int)tal2 + "= " + sum);
             System.out.print("Tryck för att gå vidare");
             String vidare = scanner.nextLine();
 
