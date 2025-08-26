@@ -12,8 +12,6 @@ public class App {
         String val = "";
         double sum = 0;
 
-        String metod = "";
-
         boolean on = true;
 
         while (on) {
